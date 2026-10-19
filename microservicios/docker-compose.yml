@@ -75,6 +75,8 @@ services:
       DB_NAME: pedidos_db
       DB_USER: pedidos_user
       DB_PASSWORD: pedidos123
+      USUARIOS_URL: http://usuarios-app:3001
+      PRODUCTOS_URL: http://productos-app:3002
     depends_on:
       pedidos-db:
         condition: service_healthy
@@ -99,3 +101,4 @@ volumes:
   usuarios_data:
   productos_data:
   pedidos_data:
+
