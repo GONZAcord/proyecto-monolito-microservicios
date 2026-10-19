@@ -11,7 +11,7 @@ app.get('/health', (req, res) => {
 // --- USUARIOS ---
 app.get('/usuarios', async (req, res) => {
     try {
-        const result = await pool.query('SELECT * FROM usuariosGAAA');
+        const result = await pool.query('SELECT * FROM usuarios');
         res.json(result.rows);
     } catch (error) {
         console.error(error);
